@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--绑定数据-->
+    <data>
+        <variable name="model" type="com.abt.horizontal_loop_recycler.Live.LiveViewModel" />
+        <variable name="adapter" type="com.abt.horizontal_loop_recycler.adapter.PlatformAdapter" />
+    </data>
+
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+
+        <com.abt.horizontal_loop_recycler.view.ScaleRecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_65"
+            android:background="@color/C_22_22_22"
+            android:layout_marginTop="@dimen/dp_12.5"
+            android:scrollbars="none"
+            android:layout_gravity="center"
+            app:adapter="@{adapter}" />
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="app_name">HorizontalLoopRecycler</string>
+    <string name="pref_key_transition_time" translatable="false">pref_key_transition_time</string>
+    <string name="dialog_seekbar_transition_time">Item transition time in millis</string>
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <import type="android.view.View" />
+        <variable name="model"
+            type="com.abt.horizontal_loop_recycler.databinding.LayoutPlatformItemBinding" />
+        <variable
+            name="image"
+            type="int" />
+    </data>
+
+    <com.abt.horizontal_loop_recycler.view.FocusRelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:focusable="true"
+        android:layout_marginTop="@dimen/dp_12.5"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/id_index_gallery_item_image"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:scaleType="centerCrop"
+            app:ir="@{image}" />
+
+    </com.abt.horizontal_loop_recycler.view.FocusRelativeLayout>
+
+</layout>

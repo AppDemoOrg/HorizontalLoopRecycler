@@ -32,5 +32,4 @@ public class DiscreteScrollViewOptions {
         return PreferenceManager.getDefaultSharedPreferences(LiveApplication.getInstance());
     }
 
-
 }

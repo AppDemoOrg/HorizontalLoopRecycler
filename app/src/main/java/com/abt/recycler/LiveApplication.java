@@ -12,7 +12,6 @@ import com.orhanobut.logger.Logger;
  */
 public class LiveApplication extends SwipBackApplication {
 
-    private static final String TAG = LiveApplication.class.getSimpleName();
     private static LiveApplication instance;
 
     public static LiveApplication getInstance() {
@@ -33,7 +32,7 @@ public class LiveApplication extends SwipBackApplication {
     }
 
     @Override
-    public void executeAsycInit() {
+    public void executeAsyncInit() {
 
     }
 

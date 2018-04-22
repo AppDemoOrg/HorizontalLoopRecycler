@@ -117,7 +117,6 @@ public class LiveFragment extends BaseFragment<LiveViewModel> {
                         view.setAlpha(1.0f);
                     }
 
-
                     if (index == 2) {
                         view.setScaleX(1.0f + ration);
                         view.setScaleY(1.0f + ration);
@@ -139,7 +138,6 @@ public class LiveFragment extends BaseFragment<LiveViewModel> {
                 return false;
             }
         });
-
 
         mLiveSettingBinding.recyclerView.addOnLayoutChangeListener(new View.OnLayoutChangeListener() {
             @Override

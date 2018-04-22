@@ -15,7 +15,7 @@ import java.util.Locale;
  */
 public abstract class SwipBackApplication extends BasicApplication{
 
-    public abstract void executeAsycInit();
+    public abstract void executeAsyncInit();
 
     @Override
     public void initComplete() {
@@ -24,7 +24,7 @@ public abstract class SwipBackApplication extends BasicApplication{
                 builder().execute(new Runnable() {
             @Override
             public void run() {
-                executeAsycInit();
+                executeAsyncInit();
             }
         });
         //initBugs();
@@ -37,8 +37,7 @@ public abstract class SwipBackApplication extends BasicApplication{
 
     //加载bugs框架
     private final void initBugs(){
-        Bugtags.start(getAppKey(),
-                SwipBackApplication.this, Bugtags.BTGInvocationEventBubble);
+        Bugtags.start(getAppKey(), SwipBackApplication.this, Bugtags.BTGInvocationEventBubble);
     }
 
     public abstract String getAppKey();

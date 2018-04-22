@@ -18,7 +18,7 @@ public final class DebugManage {
      */
     public static final void initialize(Application application){
         initLeakCanary(application);
-        //initStrictMode();
+        initStrictMode();
     }
 
     //初始化内存检查

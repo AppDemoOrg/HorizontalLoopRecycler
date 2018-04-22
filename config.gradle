@@ -37,7 +37,7 @@ project.ext {
     //----------------------------------------------------------------------- App配置------------------------------------------------------------------------------------
     //app
     app = [
-            applicationId    : "com.abt.horizontal_loop_recycler",
+            applicationId    : "com.abt.recycler",
             versionCode      : 1,
             versionName      : "1.0.0"
     ]
@@ -108,7 +108,6 @@ project.ext {
             "glide-okhttp3-integration"  : "com.github.bumptech.glide:okhttp3-integration:${glideVersion}",
 
             "eventbus"                     : "org.greenrobot:eventbus:${eventbusVersion}",
-
             "debugCompile"                : "com.squareup.leakcanary:leakcanary-android:${leakcanaryVersion}",
             "releaseCompile"              : "com.squareup.leakcanary:leakcanary-android-no-op:${leakcanaryVersion}",
 

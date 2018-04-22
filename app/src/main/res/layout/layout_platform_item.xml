@@ -5,7 +5,7 @@
     <data>
         <import type="android.view.View" />
         <variable name="model"
-            type="com.abt.horizontal_loop_recycler.databinding.LayoutPlatformItemBinding" />
+            type="com.abt.recycler.databinding.LayoutPlatformItemBinding" />
         <variable
             name="image"
             type="int" />

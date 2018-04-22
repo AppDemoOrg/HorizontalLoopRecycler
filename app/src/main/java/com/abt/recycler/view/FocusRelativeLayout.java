@@ -1,4 +1,4 @@
-package com.abt.horizontal_loop_recycler.view;
+package com.abt.recycler.view;
 
 import android.content.Context;
 import android.graphics.Rect;
@@ -7,7 +7,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.RelativeLayout;
 
-import com.abt.horizontal_loop_recycler.R;
+import com.abt.recycler.R;
 
 /**
  * @描述：     @FocusRelativeLayout

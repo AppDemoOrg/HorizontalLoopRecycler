@@ -1,6 +1,6 @@
-package com.abt.horizontal_loop_recycler.demo;
+package com.abt.recycler.demo;
 
-import com.abt.horizontal_loop_recycler.R;
+import com.abt.recycler.R;
 
 import java.util.Arrays;
 import java.util.List;

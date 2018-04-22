@@ -1,4 +1,4 @@
-package com.abt.horizontal_loop_recycler.Decoration;
+package com.abt.recycler.Decoration;
 
 import android.graphics.Rect;
 import android.support.v7.widget.RecyclerView;

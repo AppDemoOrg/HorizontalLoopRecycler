@@ -1,4 +1,4 @@
-package com.abt.horizontal_loop_recycler.Live;
+package com.abt.recycler.Live;
 
 import com.abt.basic.arch.mvvm.INavigator;
 

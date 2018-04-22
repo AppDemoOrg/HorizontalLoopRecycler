@@ -1,4 +1,4 @@
-package com.abt.horizontal_loop_recycler.Live;
+package com.abt.recycler.Live;
 
 import android.databinding.BaseObservable;
 

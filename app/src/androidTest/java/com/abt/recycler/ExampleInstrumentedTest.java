@@ -1,4 +1,4 @@
-package com.abt.horizontal_loop_recycler;
+package com.abt.recycler;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

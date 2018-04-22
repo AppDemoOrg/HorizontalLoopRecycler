@@ -1,4 +1,4 @@
-package com.abt.horizontal_loop_recycler.Live;
+package com.abt.recycler.Live;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -11,11 +11,11 @@ import android.view.ViewGroup;
 
 import com.abt.basic.arch.mvvm.BaseFragment;
 import com.abt.basic.log.LogHelper;
-import com.abt.horizontal_loop_recycler.Decoration.SpaceItemDecoration;
-import com.abt.horizontal_loop_recycler.GlobalConstant;
-import com.abt.horizontal_loop_recycler.R;
-import com.abt.horizontal_loop_recycler.adapter.PlatformAdapter;
-import com.abt.horizontal_loop_recycler.databinding.FragmentLiveBinding;
+import com.abt.recycler.Decoration.SpaceItemDecoration;
+import com.abt.recycler.GlobalConstant;
+import com.abt.recycler.R;
+import com.abt.recycler.adapter.PlatformAdapter;
+import com.abt.recycler.databinding.FragmentLiveBinding;
 
 import java.util.ArrayList;
 import java.util.Arrays;

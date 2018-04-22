@@ -1,4 +1,4 @@
-package com.abt.horizontal_loop_recycler.demo;
+package com.abt.recycler.demo;
 
 /**
  * @描述：     @Live

@@ -1,4 +1,4 @@
-package com.abt.horizontal_loop_recycler.databinding;
+package com.abt.recycler.databinding;
 
 import android.databinding.BindingAdapter;
 import android.graphics.Bitmap;

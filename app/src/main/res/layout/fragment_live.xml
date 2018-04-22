@@ -3,8 +3,8 @@
 
     <!--绑定数据-->
     <data>
-        <variable name="model" type="com.abt.horizontal_loop_recycler.Live.LiveViewModel" />
-        <variable name="adapter" type="com.abt.horizontal_loop_recycler.adapter.PlatformAdapter" />
+        <variable name="model" type="com.abt.recycler.Live.LiveViewModel" />
+        <variable name="adapter" type="com.abt.recycler.adapter.PlatformAdapter" />
     </data>
 
     <LinearLayout
@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:gravity="center" >
 
-        <com.abt.horizontal_loop_recycler.view.ScaleRecyclerView
+        <com.abt.recycler.view.ScaleRecyclerView
             android:id="@+id/recycler_view"
             android:layout_width="match_parent"
             android:layout_height="@dimen/dp_65"

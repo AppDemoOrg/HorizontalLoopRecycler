@@ -1,6 +1,6 @@
-package com.abt.horizontal_loop_recycler;
+package com.abt.recycler;
 
-import com.abt.horizontal_loop_recycler.demo.DiscreteScrollViewOptions;
+import com.abt.recycler.demo.DiscreteScrollViewOptions;
 import com.abt.middle.base.SwipBackApplication;
 
 /**
@@ -11,7 +11,6 @@ import com.abt.middle.base.SwipBackApplication;
 public class LiveApplication extends SwipBackApplication {
 
     private static final String TAG = LiveApplication.class.getSimpleName();
-
     private static LiveApplication instance;
 
     public static LiveApplication getInstance() {

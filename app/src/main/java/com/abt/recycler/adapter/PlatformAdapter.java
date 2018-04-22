@@ -1,4 +1,4 @@
-package com.abt.horizontal_loop_recycler.adapter;
+package com.abt.recycler.adapter;
 
 import android.databinding.DataBindingUtil;
 import android.os.Build;
@@ -8,8 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.abt.horizontal_loop_recycler.R;
-import com.abt.horizontal_loop_recycler.databinding.LayoutPlatformItemBinding;
+import com.abt.recycler.R;
+import com.abt.recycler.databinding.LayoutPlatformItemBinding;
 
 import java.util.ArrayList;
 

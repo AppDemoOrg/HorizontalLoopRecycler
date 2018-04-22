@@ -1,8 +1,8 @@
-package com.abt.horizontal_loop_recycler.adapter;
+package com.abt.recycler.adapter;
 
 import android.support.v7.widget.RecyclerView;
 
-import com.abt.horizontal_loop_recycler.databinding.LayoutPlatformItemBinding;
+import com.abt.recycler.databinding.LayoutPlatformItemBinding;
 
 /**
  * @描述：     @平台适配器Holder

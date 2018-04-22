@@ -1,11 +1,11 @@
-package com.abt.horizontal_loop_recycler.demo;
+package com.abt.recycler.demo;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import com.abt.horizontal_loop_recycler.R;
+import com.abt.recycler.R;
 import java.util.List;
 
 /**

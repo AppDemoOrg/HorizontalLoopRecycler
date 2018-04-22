@@ -1,11 +1,11 @@
-package com.abt.horizontal_loop_recycler.demo;
+package com.abt.recycler.demo;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
-import com.abt.horizontal_loop_recycler.R;
+import com.abt.recycler.R;
 import com.yarolegovich.discretescrollview.DiscreteScrollView;
 import com.yarolegovich.discretescrollview.transform.ScaleTransformer;
 

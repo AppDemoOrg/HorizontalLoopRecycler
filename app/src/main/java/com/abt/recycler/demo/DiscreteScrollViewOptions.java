@@ -1,10 +1,10 @@
-package com.abt.horizontal_loop_recycler.demo;
+package com.abt.recycler.demo;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
-import com.abt.horizontal_loop_recycler.LiveApplication;
-import com.abt.horizontal_loop_recycler.R;
+import com.abt.recycler.LiveApplication;
+import com.abt.recycler.R;
 
 /**
  * @描述：     @DiscreteScrollViewOptions

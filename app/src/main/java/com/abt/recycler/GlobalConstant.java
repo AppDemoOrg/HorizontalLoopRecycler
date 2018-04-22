@@ -1,4 +1,4 @@
-package com.abt.horizontal_loop_recycler;
+package com.abt.recycler;
 
 /**
  * @描述：     @GlobalConstant

@@ -1,4 +1,4 @@
-package com.abt.horizontal_loop_recycler.view;
+package com.abt.recycler.view;
 
 import android.content.Context;
 import android.graphics.Canvas;

@@ -13,7 +13,6 @@
         android:scaleType="centerInside"
         android:alpha="0.5"
         tools:src="@drawable/platform_facebook" />
-
     <!-- android:tint="@color/grayIconTint"-->
 
 </LinearLayout>

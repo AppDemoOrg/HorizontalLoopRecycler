@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import com.abt.recycler.R;
+import com.orhanobut.logger.Logger;
 import com.yarolegovich.discretescrollview.DiscreteScrollView;
 import com.yarolegovich.discretescrollview.transform.ScaleTransformer;
 
@@ -29,7 +30,7 @@ public class LiveActivity extends AppCompatActivity implements
         setContentView(R.layout.activity_live);
 
         platforms = LivePlatform.get().getPlatforms();
-        platformPicker = (DiscreteScrollView) findViewById(R.id.recycler_view);
+        platformPicker = findViewById(R.id.recycler_view);
         platformPicker.setSlideOnFling(true);
         platformPicker.setAdapter(new LiveAdapter(platforms));
         platformPicker.addOnItemChangedListener(this);
@@ -52,14 +53,14 @@ public class LiveActivity extends AppCompatActivity implements
     }
 
     @Override
-    public void onScroll(
-            float position,
-            int currentIndex, int newIndex,
+    public void onScroll(float position, int currentIndex, int newIndex,
             @Nullable LiveAdapter.ViewHolder currentHolder,
             @Nullable LiveAdapter.ViewHolder newHolder) {
         Live current = platforms.get(currentIndex%platforms.size());
+        Logger.d("currentLive = "+current.toString());
         if (newIndex >= 0 && newIndex < (platformPicker.getAdapter().getItemCount()%platforms.size())) {
             Live next = platforms.get(newIndex%platforms.size());
+            Logger.d("nextLive = "+next.toString());
         }
     }
 

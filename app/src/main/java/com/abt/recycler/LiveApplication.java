@@ -1,7 +1,9 @@
 package com.abt.recycler;
 
-import com.abt.recycler.demo.DiscreteScrollViewOptions;
 import com.abt.middle.base.SwipBackApplication;
+import com.abt.recycler.demo.DiscreteScrollViewOptions;
+import com.orhanobut.logger.AndroidLogAdapter;
+import com.orhanobut.logger.Logger;
 
 /**
  * @描述：     @直播application
@@ -22,6 +24,7 @@ public class LiveApplication extends SwipBackApplication {
         super.onCreate();
         instance = this;
         DiscreteScrollViewOptions.init(this);
+        Logger.addLogAdapter(new AndroidLogAdapter());
     }
 
     @Override

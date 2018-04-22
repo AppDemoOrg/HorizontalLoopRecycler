@@ -24,15 +24,12 @@ import java.util.List;
 public class DiscreteScrollView extends RecyclerView {
 
     public static final int NO_POSITION = DiscreteScrollLayoutManager.NO_POSITION;
-
     private static final int DEFAULT_ORIENTATION = DSVOrientation.HORIZONTAL.ordinal();
+    private boolean isOverScrollEnabled;
 
     private DiscreteScrollLayoutManager layoutManager;
-
     private List<ScrollStateChangeListener> scrollStateChangeListeners;
     private List<OnItemChangedListener> onItemChangedListeners;
-
-    private boolean isOverScrollEnabled;
 
     public DiscreteScrollView(Context context) {
         super(context);
@@ -61,7 +58,6 @@ public class DiscreteScrollView extends RecyclerView {
         }
 
         isOverScrollEnabled = getOverScrollMode() != OVER_SCROLL_NEVER;
-
         layoutManager = new DiscreteScrollLayoutManager(
                 getContext(), new ScrollStateListener(),
                 DSVOrientation.values()[orientation]);
@@ -76,7 +72,6 @@ public class DiscreteScrollView extends RecyclerView {
             throw new IllegalArgumentException(getContext().getString(R.string.dsv_ex_msg_dont_set_lm));
         }
     }
-
 
     @Override
     public boolean fling(int velocityX, int velocityY) {
@@ -278,7 +273,6 @@ public class DiscreteScrollView extends RecyclerView {
     }
 
     public interface ScrollListener<T extends ViewHolder> {
-
         void onScroll(float scrollPosition,
                       int currentPosition, int newPosition,
                       @Nullable T currentHolder,

@@ -73,7 +73,6 @@ public class PlatformAdapter extends RecyclerView.Adapter<PlatformViewHolder>
                 ViewGroup parent = (ViewGroup) view.getParent();
                 parent.requestLayout();
                 parent.invalidate();
-
             }
         }
     }

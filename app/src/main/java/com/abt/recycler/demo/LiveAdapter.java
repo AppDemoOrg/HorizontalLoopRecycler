@@ -8,6 +8,8 @@ import android.widget.ImageView;
 import com.abt.recycler.R;
 import java.util.List;
 
+import static android.support.v7.widget.RecyclerView.*;
+
 /**
  * @描述：     @LiveAdapter
  * @作者：     @黄卫旗
@@ -17,9 +19,14 @@ public class LiveAdapter extends RecyclerView.Adapter<LiveAdapter.ViewHolder> {
 
     private RecyclerView parentRecycler;
     private List<Live> data;
+    private static boolean mClickable = true;
 
     public LiveAdapter(List<Live> data) {
         this.data = data;
+    }
+
+    public void setClickable(boolean click) {
+        mClickable = click;
     }
 
     @Override
@@ -36,9 +43,19 @@ public class LiveAdapter extends RecyclerView.Adapter<LiveAdapter.ViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(ViewHolder holder, final int position) {
         Live forecast = data.get(position%data.size());
         holder.imageView.setImageResource(forecast.getPlatformIcon());
+        holder.imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (mClickable && parentRecycler.getScrollState() ==
+                        RecyclerView.SCROLL_STATE_IDLE) {
+                    //parentRecycler.getScrollState();
+                    parentRecycler.smoothScrollToPosition(position);
+                }
+            }
+        });
     }
 
     @Override
@@ -81,7 +98,7 @@ public class LiveAdapter extends RecyclerView.Adapter<LiveAdapter.ViewHolder> {
 
         @Override
         public void onClick(View v) {
-            parentRecycler.smoothScrollToPosition(getAdapterPosition());
+            //parentRecycler.smoothScrollToPosition(getAdapterPosition());
         }
     }
 

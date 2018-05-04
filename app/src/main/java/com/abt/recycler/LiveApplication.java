@@ -22,7 +22,7 @@ public class LiveApplication extends SwipBackApplication {
     public void onCreate() {
         super.onCreate();
         instance = this;
-        DiscreteScrollViewOptions.init(this);
+        DiscreteScrollViewOptions.init(getAppContext());
         Logger.addLogAdapter(new AndroidLogAdapter());
     }
 

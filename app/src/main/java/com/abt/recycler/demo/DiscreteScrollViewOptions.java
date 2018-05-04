@@ -14,14 +14,14 @@ import com.abt.recycler.R;
 public class DiscreteScrollViewOptions {
 
     private static DiscreteScrollViewOptions instance;
-    private final String KEY_TRANSITION_TIME;
+    private final String KEY_TRANSITION_TIME = "pref_key_transition_time";
 
     public static void init(Context context) {
         instance = new DiscreteScrollViewOptions(context);
     }
 
     private DiscreteScrollViewOptions(Context context) {
-        KEY_TRANSITION_TIME = context.getString(R.string.pref_key_transition_time);
+        //KEY_TRANSITION_TIME = context.getString(R.string.pref_key_transition_time);
     }
 
     public static int getTransitionTime() {

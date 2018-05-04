@@ -11,6 +11,7 @@ import android.support.v4.view.accessibility.AccessibilityEventCompat;
 import android.support.v4.view.accessibility.AccessibilityRecordCompat;
 import android.support.v7.widget.LinearSmoothScroller;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.util.SparseArray;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,7 +27,7 @@ import com.yarolegovich.discretescrollview.transform.DiscreteScrollItemTransform
 class DiscreteScrollLayoutManager extends RecyclerView.LayoutManager {
 
     static final int NO_POSITION = -1;
-
+    private static final String TAG = DiscreteScrollLayoutManager.class.getSimpleName();
     private static final String EXTRA_POSITION = "extra_position";
     private static final int DEFAULT_TIME_FOR_ITEM_SETTLE = 300;
     private static final int DEFAULT_FLING_THRESHOLD = 2100; //Decrease to increase sensitivity.
@@ -324,6 +325,7 @@ class DiscreteScrollLayoutManager extends RecyclerView.LayoutManager {
             for (int i = 0; i < recyclerViewProxy.getChildCount(); i++) {
                 View child = recyclerViewProxy.getChildAt(i);
                 float position = getCenterRelativePositionOf(child, clampAfterDistance);
+                Log.d(TAG, "position = "+position);
                 itemTransformer.transformItem(child, position);
             }
         }

@@ -79,5 +79,8 @@ public class LiveActivity extends AppCompatActivity implements
         Logger.d("onScrollEnd");
         //platformPicker.setClickable(true);
         mLiveAdapter.setClickable(true);
+        mLiveAdapter.notifyDataSetChanged();
+        platformPicker.setAdapter(mLiveAdapter);
+        platformPicker.scrollToPosition(position);
     }
 }
